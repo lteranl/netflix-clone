@@ -6,7 +6,6 @@ import requests from "./requests";
 function App() {
     return (
         <div className="App">
-            <h1>lets build a netflix clone</h1>
             <Banner />
             <Row
                 title="NETFLIX ORIGINALS"
