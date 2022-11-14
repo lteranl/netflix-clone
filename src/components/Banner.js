@@ -19,6 +19,11 @@ function Banner() {
         fetchData();
     }, []);
 
+    // truncate the description to 150 characters and add "..." at the end
+    function truncate(str, n) {
+        return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+    }
+
     console.log(movie);
     return (
         <header
@@ -41,8 +46,11 @@ function Banner() {
                     <button className="banner__button">My List</button>
                 </div>
                 {/* description */}
-                <h1 className="banner__description">{movie?.overview}</h1>
+                <h1 className="banner__description">
+                    {truncate(movie?.overview, 150)}
+                </h1>
             </div>
+            <div className="banner--fadeBottom" />
         </header>
     );
 }
