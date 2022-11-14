@@ -1,4 +1,5 @@
 .row {
+    color: #fff;
     margin-left: 20px;
 }
 .row__posters {
@@ -10,9 +11,9 @@
 .row__posters::-webkit-scrollbar {
     height: 10px;
 }
-.row__posters::-webkit-scrollbar-track {
+/* .row__posters::-webkit-scrollbar-track {
     background: #f1f1f1;
-}
+} */
 .row__posters::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
