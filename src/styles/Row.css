@@ -1,0 +1,29 @@
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.row__posters::-webkit-scrollbar {
+    height: 10px;
+}
+.row__posters::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.row__posters::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.row__posters:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+.row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.row__poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
